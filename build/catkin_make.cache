@@ -1,0 +1,2 @@
+ar_track_alvar:beginner_tutorials:edumip_msgs:edumip_my_robot:edumip_my_robot_gazebo_ros:joy_twist:learning_joy:learning_tf:r2d2:testbot_description:turtlebot_simulator/turtlebot_gazebo:turtlebot_simulator/turtlebot_simulator:turtlebot_simulator/turtlebot_stage:turtlebot_simulator/turtlebot_stdr:urdf_tutorial
+-DCATKIN_DEVEL_PREFIX=/home/andrew/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/andrew/catkin_ws/install -G Unix Makefiles

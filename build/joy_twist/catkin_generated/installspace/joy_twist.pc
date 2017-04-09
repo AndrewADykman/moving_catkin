@@ -1,0 +1,8 @@
+prefix=/home/andrew/catkin_ws/install
+
+Name: joy_twist
+Description: Description of joy_twist
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/andrew/catkin_ws/install/lib 
+Requires: 
