@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/edumip_msgs_generate_messages_lisp"
-  "/home/andrew/catkin_ws/devel/share/common-lisp/ros/edumip_msgs/msg/EduMipState.lisp"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/common-lisp/ros/edumip_msgs/msg/EduMipState.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

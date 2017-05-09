@@ -1,8 +1,8 @@
-# Install script for directory: /home/andrew/catkin_ws/src/r2d2
+# Install script for directory: /home/ajiang2/RSP/catkin_ws/moving_catkin/src/r2d2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/andrew/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajiang2/RSP/catkin_ws/moving_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/andrew/catkin_ws/build/r2d2/catkin_generated/installspace/r2d2.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/r2d2/catkin_generated/installspace/r2d2.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2d2/cmake" TYPE FILE FILES
-    "/home/andrew/catkin_ws/build/r2d2/catkin_generated/installspace/r2d2Config.cmake"
-    "/home/andrew/catkin_ws/build/r2d2/catkin_generated/installspace/r2d2Config-version.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/r2d2/catkin_generated/installspace/r2d2Config.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/r2d2/catkin_generated/installspace/r2d2Config-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2d2" TYPE FILE FILES "/home/andrew/catkin_ws/src/r2d2/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2d2" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/src/r2d2/package.xml")
 endif()
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/edumip_msgs_generate_messages_eus"
-  "/home/andrew/catkin_ws/devel/share/roseus/ros/edumip_msgs/msg/EduMipState.l"
-  "/home/andrew/catkin_ws/devel/share/roseus/ros/edumip_msgs/manifest.l"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/roseus/ros/edumip_msgs/msg/EduMipState.l"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/roseus/ros/edumip_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

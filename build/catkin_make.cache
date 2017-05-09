@@ -1,2 +1,2 @@
-ar_track_alvar:beginner_tutorials:edumip_msgs:edumip_my_robot:edumip_my_robot_gazebo_ros:joy_twist:learning_joy:learning_tf:r2d2:testbot_description:turtlebot_simulator/turtlebot_gazebo:turtlebot_simulator/turtlebot_simulator:turtlebot_simulator/turtlebot_stage:turtlebot_simulator/turtlebot_stdr:urdf_tutorial
--DCATKIN_DEVEL_PREFIX=/home/andrew/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/andrew/catkin_ws/install -G Unix Makefiles
+ar_track_alvar:edumip_msgs:edumip_my_robot:goal_twist:image_pipeline/camera_calibration:image_pipeline/depth_image_proc:image_pipeline/image_pipeline:image_pipeline/image_proc:image_pipeline/image_publisher:image_pipeline/image_rotate:image_pipeline/image_view:image_pipeline/stereo_image_proc:joy_twist:learning_joy:r2d2:testbot_description:tf_multi_parser:usb_cam
+-DCATKIN_DEVEL_PREFIX=/home/ajiang2/RSP/catkin_ws/moving_catkin/devel -DCMAKE_INSTALL_PREFIX=/home/ajiang2/RSP/catkin_ws/moving_catkin/install -G Unix Makefiles

@@ -1,8 +1,8 @@
-# Install script for directory: /home/andrew/catkin_ws/src/learning_joy
+# Install script for directory: /home/ajiang2/RSP/catkin_ws/moving_catkin/src/learning_joy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/andrew/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajiang2/RSP/catkin_ws/moving_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/andrew/catkin_ws/build/learning_joy/catkin_generated/installspace/learning_joy.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/learning_joy/catkin_generated/installspace/learning_joy.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learning_joy/cmake" TYPE FILE FILES
-    "/home/andrew/catkin_ws/build/learning_joy/catkin_generated/installspace/learning_joyConfig.cmake"
-    "/home/andrew/catkin_ws/build/learning_joy/catkin_generated/installspace/learning_joyConfig-version.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/learning_joy/catkin_generated/installspace/learning_joyConfig.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/learning_joy/catkin_generated/installspace/learning_joyConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learning_joy" TYPE FILE FILES "/home/andrew/catkin_ws/src/learning_joy/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learning_joy" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/src/learning_joy/package.xml")
 endif()
 

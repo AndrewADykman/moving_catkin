@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ar_track_alvar_gencfg"
-  "/home/andrew/catkin_ws/devel/include/ar_track_alvar/ParamsConfig.h"
-  "/home/andrew/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig.dox"
-  "/home/andrew/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig-usage.dox"
-  "/home/andrew/catkin_ws/devel/lib/python2.7/dist-packages/ar_track_alvar/cfg/ParamsConfig.py"
-  "/home/andrew/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig.wikidoc"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/include/ar_track_alvar/ParamsConfig.h"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/ar_track_alvar/docs/ParamsConfig.dox"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/ar_track_alvar/docs/ParamsConfig-usage.dox"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/lib/python2.7/dist-packages/ar_track_alvar/cfg/ParamsConfig.py"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/ar_track_alvar/docs/ParamsConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,22 +1,25 @@
 # CMake generated Testfile for 
-# Source directory: /home/andrew/catkin_ws/src
-# Build directory: /home/andrew/catkin_ws/build
+# Source directory: /home/ajiang2/RSP/catkin_ws/moving_catkin/src
+# Build directory: /home/ajiang2/RSP/catkin_ws/moving_catkin/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
+subdirs(image_pipeline/image_pipeline)
 subdirs(edumip_msgs)
-subdirs(turtlebot_simulator/turtlebot_gazebo)
-subdirs(turtlebot_simulator/turtlebot_simulator)
-subdirs(turtlebot_simulator/turtlebot_stage)
-subdirs(turtlebot_simulator/turtlebot_stdr)
-subdirs(beginner_tutorials)
 subdirs(joy_twist)
+subdirs(image_pipeline/camera_calibration)
+subdirs(image_pipeline/image_publisher)
+subdirs(image_pipeline/image_view)
+subdirs(image_pipeline/image_proc)
+subdirs(image_pipeline/stereo_image_proc)
+subdirs(image_pipeline/depth_image_proc)
 subdirs(edumip_my_robot)
-subdirs(edumip_my_robot_gazebo_ros)
+subdirs(goal_twist)
 subdirs(ar_track_alvar)
 subdirs(r2d2)
+subdirs(image_pipeline/image_rotate)
+subdirs(tf_multi_parser)
 subdirs(learning_joy)
-subdirs(learning_tf)
 subdirs(testbot_description)
-subdirs(urdf_tutorial)
+subdirs(usb_cam)

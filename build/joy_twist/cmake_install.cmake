@@ -1,8 +1,8 @@
-# Install script for directory: /home/andrew/catkin_ws/src/joy_twist
+# Install script for directory: /home/ajiang2/RSP/catkin_ws/moving_catkin/src/joy_twist
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/andrew/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajiang2/RSP/catkin_ws/moving_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/andrew/catkin_ws/build/joy_twist/catkin_generated/installspace/joy_twist.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/joy_twist/catkin_generated/installspace/joy_twist.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_twist/cmake" TYPE FILE FILES
-    "/home/andrew/catkin_ws/build/joy_twist/catkin_generated/installspace/joy_twistConfig.cmake"
-    "/home/andrew/catkin_ws/build/joy_twist/catkin_generated/installspace/joy_twistConfig-version.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/joy_twist/catkin_generated/installspace/joy_twistConfig.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/joy_twist/catkin_generated/installspace/joy_twistConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_twist" TYPE FILE FILES "/home/andrew/catkin_ws/src/joy_twist/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy_twist" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/src/joy_twist/package.xml")
 endif()
 

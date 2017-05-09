@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/edumip_msgs_generate_messages_cpp"
-  "/home/andrew/catkin_ws/devel/include/edumip_msgs/EduMipState.h"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/include/edumip_msgs/EduMipState.h"
 )
 
 # Per-language clean rules from dependency scanning.

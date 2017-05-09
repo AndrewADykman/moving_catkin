@@ -5,170 +5,258 @@
 
 "use strict";
 
-let _serializer = require('../base_serialize.js');
-let _deserializer = require('../base_deserialize.js');
-let _finder = require('../find.js');
+const _serializer = _ros_msg_utils.Serialize;
+const _arraySerializer = _serializer.Array;
+const _deserializer = _ros_msg_utils.Deserialize;
+const _arrayDeserializer = _deserializer.Array;
+const _finder = _ros_msg_utils.Find;
+const _getByteLength = _ros_msg_utils.getByteLength;
 
 //-----------------------------------------------------------
 
 class EduMipState {
-  constructor() {
-    this.setpoint_phi_dot = 0.0;
-    this.setpoint_gamma_dot = 0.0;
-    this.setpoint_phi = 0.0;
-    this.phi = 0.0;
-    this.setpoint_gamma = 0.0;
-    this.gamma = 0.0;
-    this.setpoint_theta = 0.0;
-    this.theta = 0.0;
-    this.d1_u = 0.0;
-    this.d3_u = 0.0;
-    this.dutyL = 0.0;
-    this.dutyR = 0.0;
-    this.wheel_angle_L = 0.0;
-    this.wheel_angle_R = 0.0;
-    this.body_frame_easting = 0.0;
-    this.body_frame_northing = 0.0;
-    this.body_frame_heading = 0.0;
-    this.vBatt = 0.0;
-    this.armed = false;
-    this.running = false;
+  constructor(initObj={}) {
+    if (initObj === null) {
+      // initObj === null is a special case for deserialization where we don't initialize fields
+      this.setpoint_phi_dot = null;
+      this.setpoint_gamma_dot = null;
+      this.setpoint_phi = null;
+      this.phi = null;
+      this.setpoint_gamma = null;
+      this.gamma = null;
+      this.setpoint_theta = null;
+      this.theta = null;
+      this.d1_u = null;
+      this.d3_u = null;
+      this.dutyL = null;
+      this.dutyR = null;
+      this.wheel_angle_L = null;
+      this.wheel_angle_R = null;
+      this.body_frame_easting = null;
+      this.body_frame_northing = null;
+      this.body_frame_heading = null;
+      this.vBatt = null;
+      this.armed = null;
+      this.running = null;
+    }
+    else {
+      if (initObj.hasOwnProperty('setpoint_phi_dot')) {
+        this.setpoint_phi_dot = initObj.setpoint_phi_dot
+      }
+      else {
+        this.setpoint_phi_dot = 0.0;
+      }
+      if (initObj.hasOwnProperty('setpoint_gamma_dot')) {
+        this.setpoint_gamma_dot = initObj.setpoint_gamma_dot
+      }
+      else {
+        this.setpoint_gamma_dot = 0.0;
+      }
+      if (initObj.hasOwnProperty('setpoint_phi')) {
+        this.setpoint_phi = initObj.setpoint_phi
+      }
+      else {
+        this.setpoint_phi = 0.0;
+      }
+      if (initObj.hasOwnProperty('phi')) {
+        this.phi = initObj.phi
+      }
+      else {
+        this.phi = 0.0;
+      }
+      if (initObj.hasOwnProperty('setpoint_gamma')) {
+        this.setpoint_gamma = initObj.setpoint_gamma
+      }
+      else {
+        this.setpoint_gamma = 0.0;
+      }
+      if (initObj.hasOwnProperty('gamma')) {
+        this.gamma = initObj.gamma
+      }
+      else {
+        this.gamma = 0.0;
+      }
+      if (initObj.hasOwnProperty('setpoint_theta')) {
+        this.setpoint_theta = initObj.setpoint_theta
+      }
+      else {
+        this.setpoint_theta = 0.0;
+      }
+      if (initObj.hasOwnProperty('theta')) {
+        this.theta = initObj.theta
+      }
+      else {
+        this.theta = 0.0;
+      }
+      if (initObj.hasOwnProperty('d1_u')) {
+        this.d1_u = initObj.d1_u
+      }
+      else {
+        this.d1_u = 0.0;
+      }
+      if (initObj.hasOwnProperty('d3_u')) {
+        this.d3_u = initObj.d3_u
+      }
+      else {
+        this.d3_u = 0.0;
+      }
+      if (initObj.hasOwnProperty('dutyL')) {
+        this.dutyL = initObj.dutyL
+      }
+      else {
+        this.dutyL = 0.0;
+      }
+      if (initObj.hasOwnProperty('dutyR')) {
+        this.dutyR = initObj.dutyR
+      }
+      else {
+        this.dutyR = 0.0;
+      }
+      if (initObj.hasOwnProperty('wheel_angle_L')) {
+        this.wheel_angle_L = initObj.wheel_angle_L
+      }
+      else {
+        this.wheel_angle_L = 0.0;
+      }
+      if (initObj.hasOwnProperty('wheel_angle_R')) {
+        this.wheel_angle_R = initObj.wheel_angle_R
+      }
+      else {
+        this.wheel_angle_R = 0.0;
+      }
+      if (initObj.hasOwnProperty('body_frame_easting')) {
+        this.body_frame_easting = initObj.body_frame_easting
+      }
+      else {
+        this.body_frame_easting = 0.0;
+      }
+      if (initObj.hasOwnProperty('body_frame_northing')) {
+        this.body_frame_northing = initObj.body_frame_northing
+      }
+      else {
+        this.body_frame_northing = 0.0;
+      }
+      if (initObj.hasOwnProperty('body_frame_heading')) {
+        this.body_frame_heading = initObj.body_frame_heading
+      }
+      else {
+        this.body_frame_heading = 0.0;
+      }
+      if (initObj.hasOwnProperty('vBatt')) {
+        this.vBatt = initObj.vBatt
+      }
+      else {
+        this.vBatt = 0.0;
+      }
+      if (initObj.hasOwnProperty('armed')) {
+        this.armed = initObj.armed
+      }
+      else {
+        this.armed = false;
+      }
+      if (initObj.hasOwnProperty('running')) {
+        this.running = initObj.running
+      }
+      else {
+        this.running = false;
+      }
+    }
   }
 
-  static serialize(obj, bufferInfo) {
+  static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type EduMipState
     // Serialize message field [setpoint_phi_dot]
-    bufferInfo = _serializer.float32(obj.setpoint_phi_dot, bufferInfo);
+    bufferOffset = _serializer.float32(obj.setpoint_phi_dot, buffer, bufferOffset);
     // Serialize message field [setpoint_gamma_dot]
-    bufferInfo = _serializer.float32(obj.setpoint_gamma_dot, bufferInfo);
+    bufferOffset = _serializer.float32(obj.setpoint_gamma_dot, buffer, bufferOffset);
     // Serialize message field [setpoint_phi]
-    bufferInfo = _serializer.float32(obj.setpoint_phi, bufferInfo);
+    bufferOffset = _serializer.float32(obj.setpoint_phi, buffer, bufferOffset);
     // Serialize message field [phi]
-    bufferInfo = _serializer.float32(obj.phi, bufferInfo);
+    bufferOffset = _serializer.float32(obj.phi, buffer, bufferOffset);
     // Serialize message field [setpoint_gamma]
-    bufferInfo = _serializer.float32(obj.setpoint_gamma, bufferInfo);
+    bufferOffset = _serializer.float32(obj.setpoint_gamma, buffer, bufferOffset);
     // Serialize message field [gamma]
-    bufferInfo = _serializer.float32(obj.gamma, bufferInfo);
+    bufferOffset = _serializer.float32(obj.gamma, buffer, bufferOffset);
     // Serialize message field [setpoint_theta]
-    bufferInfo = _serializer.float32(obj.setpoint_theta, bufferInfo);
+    bufferOffset = _serializer.float32(obj.setpoint_theta, buffer, bufferOffset);
     // Serialize message field [theta]
-    bufferInfo = _serializer.float32(obj.theta, bufferInfo);
+    bufferOffset = _serializer.float32(obj.theta, buffer, bufferOffset);
     // Serialize message field [d1_u]
-    bufferInfo = _serializer.float32(obj.d1_u, bufferInfo);
+    bufferOffset = _serializer.float32(obj.d1_u, buffer, bufferOffset);
     // Serialize message field [d3_u]
-    bufferInfo = _serializer.float32(obj.d3_u, bufferInfo);
+    bufferOffset = _serializer.float32(obj.d3_u, buffer, bufferOffset);
     // Serialize message field [dutyL]
-    bufferInfo = _serializer.float32(obj.dutyL, bufferInfo);
+    bufferOffset = _serializer.float32(obj.dutyL, buffer, bufferOffset);
     // Serialize message field [dutyR]
-    bufferInfo = _serializer.float32(obj.dutyR, bufferInfo);
+    bufferOffset = _serializer.float32(obj.dutyR, buffer, bufferOffset);
     // Serialize message field [wheel_angle_L]
-    bufferInfo = _serializer.float32(obj.wheel_angle_L, bufferInfo);
+    bufferOffset = _serializer.float32(obj.wheel_angle_L, buffer, bufferOffset);
     // Serialize message field [wheel_angle_R]
-    bufferInfo = _serializer.float32(obj.wheel_angle_R, bufferInfo);
+    bufferOffset = _serializer.float32(obj.wheel_angle_R, buffer, bufferOffset);
     // Serialize message field [body_frame_easting]
-    bufferInfo = _serializer.float32(obj.body_frame_easting, bufferInfo);
+    bufferOffset = _serializer.float32(obj.body_frame_easting, buffer, bufferOffset);
     // Serialize message field [body_frame_northing]
-    bufferInfo = _serializer.float32(obj.body_frame_northing, bufferInfo);
+    bufferOffset = _serializer.float32(obj.body_frame_northing, buffer, bufferOffset);
     // Serialize message field [body_frame_heading]
-    bufferInfo = _serializer.float32(obj.body_frame_heading, bufferInfo);
+    bufferOffset = _serializer.float32(obj.body_frame_heading, buffer, bufferOffset);
     // Serialize message field [vBatt]
-    bufferInfo = _serializer.float32(obj.vBatt, bufferInfo);
+    bufferOffset = _serializer.float32(obj.vBatt, buffer, bufferOffset);
     // Serialize message field [armed]
-    bufferInfo = _serializer.bool(obj.armed, bufferInfo);
+    bufferOffset = _serializer.bool(obj.armed, buffer, bufferOffset);
     // Serialize message field [running]
-    bufferInfo = _serializer.bool(obj.running, bufferInfo);
-    return bufferInfo;
+    bufferOffset = _serializer.bool(obj.running, buffer, bufferOffset);
+    return bufferOffset;
   }
 
-  static deserialize(buffer) {
+  static deserialize(buffer, bufferOffset=[0]) {
     //deserializes a message object of type EduMipState
-    let tmp;
     let len;
-    let data = new EduMipState();
+    let data = new EduMipState(null);
     // Deserialize message field [setpoint_phi_dot]
-    tmp = _deserializer.float32(buffer);
-    data.setpoint_phi_dot = tmp.data;
-    buffer = tmp.buffer;
+    data.setpoint_phi_dot = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [setpoint_gamma_dot]
-    tmp = _deserializer.float32(buffer);
-    data.setpoint_gamma_dot = tmp.data;
-    buffer = tmp.buffer;
+    data.setpoint_gamma_dot = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [setpoint_phi]
-    tmp = _deserializer.float32(buffer);
-    data.setpoint_phi = tmp.data;
-    buffer = tmp.buffer;
+    data.setpoint_phi = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [phi]
-    tmp = _deserializer.float32(buffer);
-    data.phi = tmp.data;
-    buffer = tmp.buffer;
+    data.phi = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [setpoint_gamma]
-    tmp = _deserializer.float32(buffer);
-    data.setpoint_gamma = tmp.data;
-    buffer = tmp.buffer;
+    data.setpoint_gamma = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [gamma]
-    tmp = _deserializer.float32(buffer);
-    data.gamma = tmp.data;
-    buffer = tmp.buffer;
+    data.gamma = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [setpoint_theta]
-    tmp = _deserializer.float32(buffer);
-    data.setpoint_theta = tmp.data;
-    buffer = tmp.buffer;
+    data.setpoint_theta = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [theta]
-    tmp = _deserializer.float32(buffer);
-    data.theta = tmp.data;
-    buffer = tmp.buffer;
+    data.theta = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [d1_u]
-    tmp = _deserializer.float32(buffer);
-    data.d1_u = tmp.data;
-    buffer = tmp.buffer;
+    data.d1_u = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [d3_u]
-    tmp = _deserializer.float32(buffer);
-    data.d3_u = tmp.data;
-    buffer = tmp.buffer;
+    data.d3_u = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [dutyL]
-    tmp = _deserializer.float32(buffer);
-    data.dutyL = tmp.data;
-    buffer = tmp.buffer;
+    data.dutyL = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [dutyR]
-    tmp = _deserializer.float32(buffer);
-    data.dutyR = tmp.data;
-    buffer = tmp.buffer;
+    data.dutyR = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [wheel_angle_L]
-    tmp = _deserializer.float32(buffer);
-    data.wheel_angle_L = tmp.data;
-    buffer = tmp.buffer;
+    data.wheel_angle_L = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [wheel_angle_R]
-    tmp = _deserializer.float32(buffer);
-    data.wheel_angle_R = tmp.data;
-    buffer = tmp.buffer;
+    data.wheel_angle_R = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [body_frame_easting]
-    tmp = _deserializer.float32(buffer);
-    data.body_frame_easting = tmp.data;
-    buffer = tmp.buffer;
+    data.body_frame_easting = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [body_frame_northing]
-    tmp = _deserializer.float32(buffer);
-    data.body_frame_northing = tmp.data;
-    buffer = tmp.buffer;
+    data.body_frame_northing = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [body_frame_heading]
-    tmp = _deserializer.float32(buffer);
-    data.body_frame_heading = tmp.data;
-    buffer = tmp.buffer;
+    data.body_frame_heading = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [vBatt]
-    tmp = _deserializer.float32(buffer);
-    data.vBatt = tmp.data;
-    buffer = tmp.buffer;
+    data.vBatt = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [armed]
-    tmp = _deserializer.bool(buffer);
-    data.armed = tmp.data;
-    buffer = tmp.buffer;
+    data.armed = _deserializer.bool(buffer, bufferOffset);
     // Deserialize message field [running]
-    tmp = _deserializer.bool(buffer);
-    data.running = tmp.data;
-    buffer = tmp.buffer;
-    return {
-      data: data,
-      buffer: buffer
-    }
+    data.running = _deserializer.bool(buffer, bufferOffset);
+    return data;
+  }
+
+  static getMessageSize(object) {
+    return 74;
   }
 
   static datatype() {
@@ -212,6 +300,154 @@ class EduMipState {
     `;
   }
 
+  static Resolve(msg) {
+    // deep-construct a valid message object instance of whatever was passed in
+    if (typeof msg !== 'object' || msg === null) {
+      msg = {};
+    }
+    const resolved = new EduMipState(null);
+    if (msg.setpoint_phi_dot !== undefined) {
+      resolved.setpoint_phi_dot = msg.setpoint_phi_dot;
+    }
+    else {
+      resolved.setpoint_phi_dot = 0.0
+    }
+
+    if (msg.setpoint_gamma_dot !== undefined) {
+      resolved.setpoint_gamma_dot = msg.setpoint_gamma_dot;
+    }
+    else {
+      resolved.setpoint_gamma_dot = 0.0
+    }
+
+    if (msg.setpoint_phi !== undefined) {
+      resolved.setpoint_phi = msg.setpoint_phi;
+    }
+    else {
+      resolved.setpoint_phi = 0.0
+    }
+
+    if (msg.phi !== undefined) {
+      resolved.phi = msg.phi;
+    }
+    else {
+      resolved.phi = 0.0
+    }
+
+    if (msg.setpoint_gamma !== undefined) {
+      resolved.setpoint_gamma = msg.setpoint_gamma;
+    }
+    else {
+      resolved.setpoint_gamma = 0.0
+    }
+
+    if (msg.gamma !== undefined) {
+      resolved.gamma = msg.gamma;
+    }
+    else {
+      resolved.gamma = 0.0
+    }
+
+    if (msg.setpoint_theta !== undefined) {
+      resolved.setpoint_theta = msg.setpoint_theta;
+    }
+    else {
+      resolved.setpoint_theta = 0.0
+    }
+
+    if (msg.theta !== undefined) {
+      resolved.theta = msg.theta;
+    }
+    else {
+      resolved.theta = 0.0
+    }
+
+    if (msg.d1_u !== undefined) {
+      resolved.d1_u = msg.d1_u;
+    }
+    else {
+      resolved.d1_u = 0.0
+    }
+
+    if (msg.d3_u !== undefined) {
+      resolved.d3_u = msg.d3_u;
+    }
+    else {
+      resolved.d3_u = 0.0
+    }
+
+    if (msg.dutyL !== undefined) {
+      resolved.dutyL = msg.dutyL;
+    }
+    else {
+      resolved.dutyL = 0.0
+    }
+
+    if (msg.dutyR !== undefined) {
+      resolved.dutyR = msg.dutyR;
+    }
+    else {
+      resolved.dutyR = 0.0
+    }
+
+    if (msg.wheel_angle_L !== undefined) {
+      resolved.wheel_angle_L = msg.wheel_angle_L;
+    }
+    else {
+      resolved.wheel_angle_L = 0.0
+    }
+
+    if (msg.wheel_angle_R !== undefined) {
+      resolved.wheel_angle_R = msg.wheel_angle_R;
+    }
+    else {
+      resolved.wheel_angle_R = 0.0
+    }
+
+    if (msg.body_frame_easting !== undefined) {
+      resolved.body_frame_easting = msg.body_frame_easting;
+    }
+    else {
+      resolved.body_frame_easting = 0.0
+    }
+
+    if (msg.body_frame_northing !== undefined) {
+      resolved.body_frame_northing = msg.body_frame_northing;
+    }
+    else {
+      resolved.body_frame_northing = 0.0
+    }
+
+    if (msg.body_frame_heading !== undefined) {
+      resolved.body_frame_heading = msg.body_frame_heading;
+    }
+    else {
+      resolved.body_frame_heading = 0.0
+    }
+
+    if (msg.vBatt !== undefined) {
+      resolved.vBatt = msg.vBatt;
+    }
+    else {
+      resolved.vBatt = 0.0
+    }
+
+    if (msg.armed !== undefined) {
+      resolved.armed = msg.armed;
+    }
+    else {
+      resolved.armed = false
+    }
+
+    if (msg.running !== undefined) {
+      resolved.running = msg.running;
+    }
+    else {
+      resolved.running = false
+    }
+
+    return resolved;
+    }
 };
 
 module.exports = EduMipState;

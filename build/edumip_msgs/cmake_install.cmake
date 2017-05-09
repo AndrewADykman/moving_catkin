@@ -1,8 +1,8 @@
-# Install script for directory: /home/andrew/catkin_ws/src/edumip_msgs
+# Install script for directory: /home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/andrew/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajiang2/RSP/catkin_ws/moving_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs/msg" TYPE FILE FILES "/home/andrew/catkin_ws/src/edumip_msgs/msg/EduMipState.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs/msg" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_msgs/msg/EduMipState.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs/cmake" TYPE FILE FILES "/home/andrew/catkin_ws/build/edumip_msgs/catkin_generated/installspace/edumip_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs/cmake" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/edumip_msgs/catkin_generated/installspace/edumip_msgs-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/andrew/catkin_ws/devel/include/edumip_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/include/edumip_msgs")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/andrew/catkin_ws/devel/share/roseus/ros/edumip_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/roseus/ros/edumip_msgs")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/andrew/catkin_ws/devel/share/common-lisp/ros/edumip_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/common-lisp/ros/edumip_msgs")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/andrew/catkin_ws/devel/share/gennodejs/ros/edumip_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/gennodejs/ros/edumip_msgs")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/home/andrew/anaconda2/bin/python" -m compileall "/home/andrew/catkin_ws/devel/lib/python2.7/dist-packages/edumip_msgs")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/lib/python2.7/dist-packages/edumip_msgs")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/andrew/catkin_ws/devel/lib/python2.7/dist-packages/edumip_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/lib/python2.7/dist-packages/edumip_msgs")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/andrew/catkin_ws/build/edumip_msgs/catkin_generated/installspace/edumip_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/edumip_msgs/catkin_generated/installspace/edumip_msgs.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs/cmake" TYPE FILE FILES "/home/andrew/catkin_ws/build/edumip_msgs/catkin_generated/installspace/edumip_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs/cmake" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/edumip_msgs/catkin_generated/installspace/edumip_msgs-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs/cmake" TYPE FILE FILES
-    "/home/andrew/catkin_ws/build/edumip_msgs/catkin_generated/installspace/edumip_msgsConfig.cmake"
-    "/home/andrew/catkin_ws/build/edumip_msgs/catkin_generated/installspace/edumip_msgsConfig-version.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/edumip_msgs/catkin_generated/installspace/edumip_msgsConfig.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/edumip_msgs/catkin_generated/installspace/edumip_msgsConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs" TYPE FILE FILES "/home/andrew/catkin_ws/src/edumip_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edumip_msgs" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_msgs/package.xml")
 endif()
 

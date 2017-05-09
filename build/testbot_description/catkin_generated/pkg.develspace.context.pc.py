@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "testbot_description"
-PROJECT_SPACE_DIR = "/home/andrew/catkin_ws/devel"
+PROJECT_SPACE_DIR = "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel"
 PROJECT_VERSION = "0.0.0"

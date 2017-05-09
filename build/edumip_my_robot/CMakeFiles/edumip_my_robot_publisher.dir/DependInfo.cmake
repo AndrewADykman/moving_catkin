@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/andrew/catkin_ws/src/edumip_my_robot/src/edumip_my_robot_publisher.cpp" "/home/andrew/catkin_ws/build/edumip_my_robot/CMakeFiles/edumip_my_robot_publisher.dir/src/edumip_my_robot_publisher.cpp.o"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_my_robot/src/edumip_my_robot_publisher.cpp" "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/edumip_my_robot/CMakeFiles/edumip_my_robot_publisher.dir/src/edumip_my_robot_publisher.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,9 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/andrew/catkin_ws/devel/include"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_my_robot/include"
   )
 
 # Targets to which this target links.

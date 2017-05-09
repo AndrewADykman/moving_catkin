@@ -1,8 +1,8 @@
-# Install script for directory: /home/andrew/catkin_ws/src/testbot_description
+# Install script for directory: /home/ajiang2/RSP/catkin_ws/moving_catkin/src/testbot_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/andrew/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajiang2/RSP/catkin_ws/moving_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/andrew/catkin_ws/build/testbot_description/catkin_generated/installspace/testbot_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/testbot_description/catkin_generated/installspace/testbot_description.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/testbot_description/cmake" TYPE FILE FILES
-    "/home/andrew/catkin_ws/build/testbot_description/catkin_generated/installspace/testbot_descriptionConfig.cmake"
-    "/home/andrew/catkin_ws/build/testbot_description/catkin_generated/installspace/testbot_descriptionConfig-version.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/testbot_description/catkin_generated/installspace/testbot_descriptionConfig.cmake"
+    "/home/ajiang2/RSP/catkin_ws/moving_catkin/build/testbot_description/catkin_generated/installspace/testbot_descriptionConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/testbot_description" TYPE FILE FILES "/home/andrew/catkin_ws/src/testbot_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/testbot_description" TYPE FILE FILES "/home/ajiang2/RSP/catkin_ws/moving_catkin/src/testbot_description/package.xml")
 endif()
 

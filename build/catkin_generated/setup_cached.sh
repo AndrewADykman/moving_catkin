@@ -7,4 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/andrew/catkin_ws/build"
+export CMAKE_PREFIX_PATH="/home/ajiang2/RSP/catkin_ws/moving_catkin/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/ajiang2/RSP/catkin_ws/moving_catkin/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/ajiang2/RSP/catkin_ws/moving_catkin/src:$ROS_PACKAGE_PATH"

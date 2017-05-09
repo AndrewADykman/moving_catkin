@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/catkin_ws/devel/include/edumip_msgs/EduMipState.h
+/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/include/edumip_msgs/EduMipState.h
 string
 -
 vector
@@ -22,21 +22,17 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/andrew/catkin_ws/src/edumip_my_robot/src/edumip_my_robot_publisher.cpp
+/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_my_robot/src/edumip_my_robot_publisher.cpp
 ros/ros.h
--
-geometry_msgs/TransformStamped.h
--
-geometry_msgs/Quaternion.h
--
-sensor_msgs/Joy.h
--
-edumip_msgs/EduMipState.h
--
+/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_my_robot/src/ros/ros.h
 sensor_msgs/JointState.h
--
+/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_my_robot/src/sensor_msgs/JointState.h
+edumip_msgs/EduMipState.h
+/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_my_robot/src/edumip_msgs/EduMipState.h
 tf/transform_broadcaster.h
--
+/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_my_robot/src/tf/transform_broadcaster.h
+geometry_msgs/TransformStamped.h
+/home/ajiang2/RSP/catkin_ws/moving_catkin/src/edumip_my_robot/src/geometry_msgs/TransformStamped.h
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string
@@ -423,8 +419,8 @@ common.h
 /opt/ros/kinetic/include/ros/master.h
 forwards.h
 /opt/ros/kinetic/include/ros/forwards.h
-XmlRpcValue.h
-/opt/ros/kinetic/include/ros/XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpcValue.h
 common.h
 /opt/ros/kinetic/include/ros/common.h
 
@@ -535,7 +531,7 @@ common.h
 /opt/ros/kinetic/include/ros/common.h
 boost/bind.hpp
 -
-XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
 -
 
 /opt/ros/kinetic/include/ros/param.h
@@ -543,8 +539,8 @@ forwards.h
 /opt/ros/kinetic/include/ros/forwards.h
 common.h
 /opt/ros/kinetic/include/ros/common.h
-XmlRpcValue.h
-/opt/ros/kinetic/include/ros/XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpcValue.h
 vector
 -
 map
@@ -914,24 +910,6 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/opt/ros/kinetic/include/sensor_msgs/Joy.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-
 /opt/ros/kinetic/include/std_msgs/Header.h
 string
 -
@@ -1238,9 +1216,9 @@ geometry_msgs/TransformStamped.h
 ros/macros.h
 -
 
-/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 xmlrpcpp/XmlRpcDecl.h
-/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
 map
 -
 string

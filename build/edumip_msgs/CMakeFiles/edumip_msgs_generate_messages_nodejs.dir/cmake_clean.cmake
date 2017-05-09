@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/edumip_msgs_generate_messages_nodejs"
-  "/home/andrew/catkin_ws/devel/share/gennodejs/ros/edumip_msgs/msg/EduMipState.js"
+  "/home/ajiang2/RSP/catkin_ws/moving_catkin/devel/share/gennodejs/ros/edumip_msgs/msg/EduMipState.js"
 )
 
 # Per-language clean rules from dependency scanning.
